@@ -8,10 +8,9 @@
 
 (<sup>📧</sup>) corresponding author.
 
-[arxiv Preprint](https://arxiv.org/abs/2305.15272)
+[arxiv preprint](https://arxiv.org/abs/2305.15272)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/vitmatte-boosting-image-matting-with/image-matting-on-composition-1k-1)](https://paperswithcode.com/sota/image-matting-on-composition-1k-1?p=vitmatte-boosting-image-matting-with)
-
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/vitmatte-boosting-image-matting-with/image-matting-on-distinctions-646)](https://paperswithcode.com/sota/image-matting-on-distinctions-646?p=vitmatte-boosting-image-matting-with)
 
 </div>
