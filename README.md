@@ -2,7 +2,7 @@
 <h1> ViTMatte🐒</h1>
 <h3> Boosting Image Matting with Pretrained Plain Vision Transformers</h3>
 
-[Jingfeng Yao](https://github.com/JingfengYao)<sup>1</sup>, [Xinggang Wang](https://xinggangw.info/)<sup>1 📧</sup>, [Shusheng Yang](https://github.com/vealocia)<sup>1</sup>, [Baoyuan Wang](https://sites.google.com/site/zjuwby/)<sup>2</sup>
+[Jingfeng Yao](https://github.com/JingfengYao)<sup>1</sup>, [Xinggang Wang](https://scholar.google.com/citations?user=qNCTLV0AAAAJ&hl=zh-CN)<sup>1 📧</sup>, [Shusheng Yang](https://github.com/vealocia)<sup>1</sup>, [Baoyuan Wang](https://sites.google.com/site/zjuwby/)<sup>2</sup>
 
 <sup>1</sup> School of EIC, HUST, <sup>2</sup> Xiaobing.AI
 
