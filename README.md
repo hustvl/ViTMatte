@@ -18,8 +18,10 @@
 #
 
 ## News
-* **`May 25th, 2023`:** We released codes of ViTMatte. The pretrained models will be coming soon!
-* **`May 24th, 2023`:** We released our paper on [arxiv](https://arxiv.org/abs/2305.15272). 
+* **`May 27th, 2023`:**  We released pretrained weights of ViTMatte!
+
+* **`May 25th, 2023`:**  We released codes of ViTMatte. The pretrained models will be coming soon!
+* **`May 24th, 2023`:**  We released our paper on [arxiv](https://arxiv.org/abs/2305.15272). 
 
 ## Introduction
 <div align="center"><h4>Plain Vision Transformer could also do image matting with simple ViTMatte framework!</h4></div>
@@ -33,14 +35,14 @@ Recently, plain vision Transformers (ViTs) have shown impressive performance on 
 Quantitative Results on [Composition-1k](https://paperswithcode.com/dataset/composition-1k)
 | Model      | SAD   | MSE | Grad | Conn  | checkpoints |
 | ---------- | ----- | --- | ---- | ----- | ----------- |
-| ViTMatte-S | 21.46 | 3.3 | 7.24 | 16.21 | coming soon |
-| ViTMatte-B | 20.33 | 3.0 | 6.74 | 14.78 | coming soon |
+| ViTMatte-S | 21.46 | 3.3 | 7.24 | 16.21 | [GoogleDrive](https://drive.google.com/file/d/12VKhSwE_miF9lWQQCgK7mv83rJIls3Xe/view?usp=sharing) |
+| ViTMatte-B | 20.33 | 3.0 | 6.74 | 14.78 | [GoogleDrive](https://drive.google.com/file/d/1mOO5MMU4kwhNX96AlfpwjAoMM4V5w3k-/view?usp=sharing) |
 
 Quantitative Results on [Distinctions-646](https://paperswithcode.com/dataset/distinctions-646)
 | Model      | SAD   | MSE | Grad | Conn  | checkpoints |
 | ---------- | ----- | --- | ---- | ----- | ----------- |
-| ViTMatte-S | 21.22 | 2.1 | 8.78 | 17.55 | coming soon |
-| ViTMatte-B | 17.05 | 1.5 | 7.03 | 12.95 | coming soon |
+| ViTMatte-S | 21.22 | 2.1 | 8.78 | 17.55 | [GoogleDrive](https://drive.google.com/file/d/18wIFlhFY9MPqyH0FGiB0PFk3Xp2xTHzx/view?usp=sharing) |
+| ViTMatte-B | 17.05 | 1.5 | 7.03 | 12.95 | [GoogleDrive](https://drive.google.com/file/d/1d97oKuITCeWgai2Tf3iNilt6rMSSYzkW/view?usp=sharing) |
 
 
 ## Get Started
