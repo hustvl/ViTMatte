@@ -1,9 +1,10 @@
-torch==1.9.0
-torchvision==0.10.0
-tensorboard==2.8.0
+torch==2.0.0
+torchvision
+tensorboard
 timm==0.5.4
 opencv-python==4.5.3.56
 setuptools==58.2.0
 easydict
 wget
 scikit-image
+fairscale
