@@ -14,14 +14,10 @@ __pycache__/
 work_dirs
 test
 val
-ckpts
-data
 .Python
 build/
 ckpts/
-data/
 ckpts
-data
 test/
 val/
 work_dirs/
