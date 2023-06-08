@@ -18,6 +18,8 @@
 #
 
 ## News
+* **`June 8th, 2023`:**  **[Matte Anything](https://github.com/hustvl/Matte-Anything) is released!** If you like ViTMatte, you may also like Matte Anything.
+
 * **`May 27th, 2023`:**  We released pretrained weights of ViTMatte!
 
 * **`May 25th, 2023`:**  We released codes of ViTMatte. The pretrained models will be coming soon!
