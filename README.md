@@ -32,6 +32,23 @@
 
 Recently, plain vision Transformers (ViTs) have shown impressive performance on various computer vision tasks, thanks to their strong modeling capacity and large-scale pretraining. However, they have not yet conquered the problem of image matting. We hypothesize that image matting could also be boosted by ViTs and present a new efficient and robust ViT-based matting system, named ViTMatte. Our method utilizes (i) a hybrid attention mechanism combined with a convolution neck to help ViTs achieve an excellent performance-computation trade-off in matting tasks. (ii) Additionally, we introduce the detail capture module, which just consists of simple lightweight convolutions to complement the detailed information required by matting. To the best of our knowledge, ViTMatte is the first work to unleash the potential of ViT on image matting with concise adaptation. It inherits many superior properties from ViT to matting, including various pretraining strategies, concise architecture design, and flexible inference strategies. We evaluate ViTMatte on Composition-1k and Distinctions-646, the most commonly used benchmark for image matting, our method achieves state-of-the-art performance and outperforms prior matting works by a large margin.
 
+## Get Started
+
+* [Installation](docs/installation.md)
+* [Train](docs/train.md)
+* [Test](docs/test.md)
+
+## Demo
+
+You could try to matting the demo image with its corresponding trimap by run:
+```
+python run_one_image.py \
+    --model vitmatte-s \
+    --checkpoint-dir path/to/checkpoint
+```
+The demo images will be saved in ``./demo``.
+You could also try with your own image and trimap with the same file.
+
 ## Results
 
 Quantitative Results on [Composition-1k](https://paperswithcode.com/dataset/composition-1k)
@@ -45,13 +62,6 @@ Quantitative Results on [Distinctions-646](https://paperswithcode.com/dataset/di
 | ---------- | ----- | --- | ---- | ----- | ----------- |
 | ViTMatte-S | 21.22 | 2.1 | 8.78 | 17.55 | [GoogleDrive](https://drive.google.com/file/d/18wIFlhFY9MPqyH0FGiB0PFk3Xp2xTHzx/view?usp=sharing) |
 | ViTMatte-B | 17.05 | 1.5 | 7.03 | 12.95 | [GoogleDrive](https://drive.google.com/file/d/1d97oKuITCeWgai2Tf3iNilt6rMSSYzkW/view?usp=sharing) |
-
-
-## Get Started
-
-* [Installation](docs/installation.md)
-* [Train](docs/train.md)
-* [Test](docs/test.md)
 
 ## Citation
 ```
