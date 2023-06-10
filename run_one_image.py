@@ -3,17 +3,18 @@ It is used to run the model on one image (and its corresponding trimap).
 
 For default, run:
 python run_one_image.py \
-    --config-dir configs/ViTMatte_S_100ep.py \
+    --model vitmatte-s \
     --checkpoint-dir path/to/checkpoint
 It will be saved in the directory ``./demo``.
 
 If you want to run on your own image, run:
 python run_one_image.py \
-    --config-dir <your config directory> \
+    --model vitmatte-s(or vitmatte-b) \
     --checkpoint-dir <your checkpoint directory> \
     --image-dir <your image directory> \
     --trimap-dir <your trimap directory> \
-    --output-dir <your output directory>
+    --output-dir <your output directory> \
+    --device <your device>
 """
 import os
 from PIL import Image
@@ -37,19 +38,31 @@ def infer_one_image(model, input, save_dir=None):
 
     return None
 
-def init_model(config, checkpoint):
+def init_model(model, checkpoint, device):
     """
     Initialize the model.
     Input:
         config: the config file of the model
         checkpoint: the checkpoint of the model
     """
-    cfg = LazyConfig.load(config)
-    model = instantiate(cfg.model)
-    model.to(cfg.train.device)
-    model.eval()
-    DetectionCheckpointer(model).load(checkpoint)
-
+    assert model in ['vitmatte-s', 'vitmatte-b']
+    if model == 'vitmatte-s':
+        config = 'configs/common/model.py'
+        cfg = LazyConfig.load(config)
+        model = instantiate(cfg.model)
+        model.to('cuda')
+        model.eval()
+        DetectionCheckpointer(model).load(checkpoint)
+    elif model == 'vitmatte-b':
+        config = 'configs/common/model.py'
+        cfg = LazyConfig.load(config)
+        cfg.model.backbone.embed_dim = 768
+        cfg.model.backbone.num_heads = 12
+        cfg.model.decoder.in_chans = 768
+        model = instantiate(cfg.model)
+        model.to('cuda')
+        model.eval()
+        DetectionCheckpointer(model).load(checkpoint)
     return model
 
 def get_data(image_dir, trimap_dir):
@@ -72,17 +85,18 @@ def get_data(image_dir, trimap_dir):
 if __name__ == '__main__':
     #add argument we need:
     parser = default_argument_parser()
-    parser.add_argument('--config-dir', type=str, default='configs/ViTMatte_S_100ep.py')
+    parser.add_argument('--model', type=str, default='vitmatte-s')
     parser.add_argument('--checkpoint-dir', type=str, default='path/to/checkpoint')
     parser.add_argument('--image-dir', type=str, default='demo/image.png')
     parser.add_argument('--trimap-dir', type=str, default='demo/trimap.png')
     parser.add_argument('--output-dir', type=str, default='demo/result.png')
+    parser.add_argument('--device', type=str, default='cuda')
 
     args = parser.parse_args()
 
     input = get_data(args.image_dir, args.trimap_dir)
     print('Initializing model...Please wait...')
-    model = init_model(args.config_dir, args.checkpoint_dir)
+    model = init_model(args.model, args.checkpoint_dir, args.device)
     print('Model initialized. Start inferencing...')
     alpha = infer_one_image(model, input, args.output_dir)
     print('Inferencing finished.')
