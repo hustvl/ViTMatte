@@ -10,6 +10,8 @@
 
 [![arxiv paper](https://img.shields.io/badge/arxiv-paper-orange)](https://arxiv.org/abs/2305.15272)
 [![Colab Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Dc2qoJueNZQyrTU19sIcrPyRDmvuMTF3?usp=sharing)
+[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![authors](https://img.shields.io/badge/by-hustvl-green)](https://github.com/hustvl)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/vitmatte-boosting-image-matting-with/image-matting-on-composition-1k-1)](https://paperswithcode.com/sota/image-matting-on-composition-1k-1?p=vitmatte-boosting-image-matting-with)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/vitmatte-boosting-image-matting-with/image-matting-on-distinctions-646)](https://paperswithcode.com/sota/image-matting-on-distinctions-646?p=vitmatte-boosting-image-matting-with)
@@ -49,6 +51,8 @@ python run_one_image.py \
 ```
 The demo images will be saved in ``./demo``.
 You could also try with your own image and trimap with the same file.
+
+Besides, you can also try ViTMatte in [![Colab Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Dc2qoJueNZQyrTU19sIcrPyRDmvuMTF3?usp=sharing). It is a simple demo to show the ability of ViTMatte.
 
 ## Results
 
