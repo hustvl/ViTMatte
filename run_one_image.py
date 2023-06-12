@@ -87,8 +87,8 @@ if __name__ == '__main__':
     parser = default_argument_parser()
     parser.add_argument('--model', type=str, default='vitmatte-s')
     parser.add_argument('--checkpoint-dir', type=str, default='path/to/checkpoint')
-    parser.add_argument('--image-dir', type=str, default='demo/boy_rgb.png')
-    parser.add_argument('--trimap-dir', type=str, default='demo/boy_trimap.png')
+    parser.add_argument('--image-dir', type=str, default='demo/retriever_rgb.png')
+    parser.add_argument('--trimap-dir', type=str, default='demo/retriever_trimap.png')
     parser.add_argument('--output-dir', type=str, default='demo/result.png')
     parser.add_argument('--device', type=str, default='cuda')
 
