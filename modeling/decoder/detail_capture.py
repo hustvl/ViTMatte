@@ -115,7 +115,7 @@ class Detail_Capture(nn.Module):
         self.conv_chans = self.convstream.conv_chans
 
         self.fusion_blks = nn.ModuleList()
-        self.fus_channs = fusion_out.copy()
+        self.fus_channs = fusion_out
         self.fus_channs.insert(0, in_chans)
         for i in range(len(self.fus_channs)-1):
             self.fusion_blks.append(
