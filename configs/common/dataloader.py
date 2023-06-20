@@ -9,8 +9,8 @@ from data import ImageFileTrain, DataGenerator
 train_dataset = DataGenerator(
     data = ImageFileTrain(
         alpha_dir='path/to/alpha',
-        fg_dir='path/to/alpha',
-        bg_dir='path/to/alpha',
+        fg_dir='path/to/fg',
+        bg_dir='path/to/bg',
         root='path/to/Adobe_Image_Matting'
     ),
     phase = 'train'
