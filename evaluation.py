@@ -12,12 +12,18 @@ def compute_mse_loss(pred, target, trimap):
     error_map = (pred - target) / 255.0
     loss = np.sum((error_map ** 2) * (trimap == 128)) / (np.sum(trimap == 128) + 1e-8)
 
+    # # if test on whole image (Disitinctions-646), please uncomment this line
+    # loss = loss = np.sum(error_map ** 2) / (pred.shape[0] * pred.shape[1])
+
     return loss
 
 
 def compute_sad_loss(pred, target, trimap):
     error_map = np.abs((pred - target) / 255.0)
     loss = np.sum(error_map * (trimap == 128))
+
+    # # if test on whole image (Disitinctions-646), please uncomment this line
+    # loss = np.sum(error_map)
 
     return loss / 1000, np.sum(trimap == 128) / 1000
 
@@ -62,7 +68,6 @@ if __name__ == '__main__':
     parser.add_argument('--pred-dir', type=str, required=True, help="output dir")
     parser.add_argument('--label-dir', type=str, default='', help="GT alpha dir")
     parser.add_argument('--trimap-dir', type=str, default='', help="trimap dir")
-    parser.add_argument('--merged-dir', type=str, default='', help="merged dir")
 
     args = parser.parse_args()
 

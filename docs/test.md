@@ -29,7 +29,6 @@ python evaluation.py \
     --pred-dir path/to/inference \
     --label-dir path/to/composition_1k/alpha \
     --trimap-dir path/to/composition_1k/trimap \
-    --merged-dir path/to/composition_1k/merged
 ```
 
 to quick evaluate your inference results.
