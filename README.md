@@ -22,6 +22,7 @@
 
 ## News
 * **`June 12th, 2023`:** We released google colab demo.  Try ViTMatte online!
+* **`June 9th, 2023`:**  Many thanks to [Lucas](https://scholar.google.com/citations?hl=zh-CN&user=p2gwhK4AAAAJ) for creating ViT and [twitting](https://twitter.com/giffmana/status/1667091401463537665) our ViTMatte paper.
 * **`June 8th, 2023`:**  **[Matte Anything](https://github.com/hustvl/Matte-Anything) is released!** If you like ViTMatte, you may also like Matte Anything.
 
 * **`May 27th, 2023`:**  We released pretrained weights of ViTMatte!
