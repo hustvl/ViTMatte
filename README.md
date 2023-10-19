@@ -21,6 +21,7 @@
 #
 
 ## News
+* **`Oct 19th, 2023`:** ViTMatte has been accepted by [Information Fusion](https://www.sciencedirect.com/journal/information-fusion) (IF=18.6)!
 * **`Sep 21th, 2023`:** ViTMatte is now available in 🤗[HuggingFace Transformers](https://huggingface.co/docs/transformers/main/model_doc/vitmatte#vitmatte)! Many thanks to [Niels](https://nielsrogge.github.io/)!
 * **`June 12th, 2023`:** We released google colab demo.  Try ViTMatte online!
 * **`June 9th, 2023`:**  Many thanks to [Lucas](https://scholar.google.com/citations?hl=zh-CN&user=p2gwhK4AAAAJ) for creating ViT and [twitting](https://twitter.com/giffmana/status/1667091401463537665) our ViTMatte paper!
