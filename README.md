@@ -74,10 +74,13 @@ Quantitative Results on [Distinctions-646](https://paperswithcode.com/dataset/di
 
 ## Citation
 ```
-@article{vitmatte,
-      title={ViTMatte: Boosting Image Matting with Pretrained Plain Vision Transformers}, 
-      author={Jingfeng Yao and Xinggang Wang and Shusheng Yang and Baoyuan Wang},
-      journal={arXiv preprint arXiv:2305.15272},
-      year={2023}
+@article{yao2024vitmatte,
+  title={ViTMatte: Boosting image matting with pre-trained plain vision transformers},
+  author={Yao, Jingfeng and Wang, Xinggang and Yang, Shusheng and Wang, Baoyuan},
+  journal={Information Fusion},
+  volume={103},
+  pages={102091},
+  year={2024},
+  publisher={Elsevier}
 }
 ```
