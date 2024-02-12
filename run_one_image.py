@@ -16,7 +16,6 @@ python run_one_image.py \
     --output-dir <your output directory> \
     --device <your device>
 """
-import os
 from PIL import Image
 from os.path import join as opj
 from torchvision.transforms import functional as F
@@ -50,7 +49,7 @@ def init_model(model, checkpoint, device):
         config = 'configs/common/model.py'
         cfg = LazyConfig.load(config)
         model = instantiate(cfg.model)
-        model.to('cuda')
+        model.to(device)
         model.eval()
         DetectionCheckpointer(model).load(checkpoint)
     elif model == 'vitmatte-b':
@@ -60,7 +59,7 @@ def init_model(model, checkpoint, device):
         cfg.model.backbone.num_heads = 12
         cfg.model.decoder.in_chans = 768
         model = instantiate(cfg.model)
-        model.to('cuda')
+        model.to(device)
         model.eval()
         DetectionCheckpointer(model).load(checkpoint)
     return model
