@@ -10,6 +10,7 @@
 
 [![arxiv paper](https://img.shields.io/badge/arxiv-paper-orange)](https://arxiv.org/abs/2305.15272)
 [![Colab Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Dc2qoJueNZQyrTU19sIcrPyRDmvuMTF3?usp=sharing)
+[![Static Badge](https://img.shields.io/badge/bilibili-tutorial-pink)](https://www.bilibili.com/video/BV191421q7PX/?spm_id_from=333.337.search-card.all.click&vd_source=d77720fde1697e9f7510096fea727a91)
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![authors](https://img.shields.io/badge/by-hustvl-green)](https://github.com/hustvl)
 
@@ -21,6 +22,7 @@
 #
 
 ## News
+* **`May 24th, 2024`:** ViTMatte has been brought to [**The Foundry's Nuke**](https://github.com/rafaelperez/ViTMatte-for-Nuke). Here is a [bilibili tutorial](https://www.bilibili.com/video/BV191421q7PX/?spm_id_from=333.337.search-card.all.click&vd_source=d77720fde1697e9f7510096fea727a91). Thanks a lot!
 * **`Oct 19th, 2023`:** **ViTMatte has been accepted by [Information Fusion](https://www.sciencedirect.com/science/article/pii/S1566253523004074) (IF=18.6)!**
 * **`Sep 21th, 2023`:** **ViTMatte is now available in 🤗[HuggingFace Transformers](https://huggingface.co/docs/transformers/main/model_doc/vitmatte#vitmatte)!** Many thanks to [Niels](https://nielsrogge.github.io/)!
 * **`June 12th, 2023`:** We released google colab demo.  Try ViTMatte online!
