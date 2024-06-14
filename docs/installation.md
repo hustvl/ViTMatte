@@ -10,7 +10,7 @@
 
   ```
   cd path/to/ViTMatte
-  pip install -r requriments.txt
+  pip install -r requirements.txt
   ```
 * Install [detectron2](https://github.com/facebookresearch/detectron2) , follow its [documentation](https://detectron2.readthedocs.io/en/latest/).
   For ViTMatte, we recommend to build it from latest source code.
