@@ -22,6 +22,7 @@
 #
 
 ## News
+* **`Aug 13th, 2025`:** ViTMatte's **monthly downloading** is over **4,000,000** times. That's incredible! Thanks a lot for your like!
 * **`May 24th, 2024`:** ViTMatte has been brought to [**The Foundry's Nuke**](https://github.com/rafaelperez/ViTMatte-for-Nuke). Here is a [bilibili tutorial](https://www.bilibili.com/video/BV191421q7PX/?spm_id_from=333.337.search-card.all.click&vd_source=d77720fde1697e9f7510096fea727a91). Thanks a lot!
 * **`Oct 19th, 2023`:** **ViTMatte has been accepted by [Information Fusion](https://www.sciencedirect.com/science/article/pii/S1566253523004074) (IF=18.6)!**
 * **`Sep 21th, 2023`:** **ViTMatte is now available in 🤗[HuggingFace Transformers](https://huggingface.co/docs/transformers/main/model_doc/vitmatte#vitmatte)!** Many thanks to [Niels](https://nielsrogge.github.io/)!
